@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoostReach | Digital Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #4F46E5 0%, #10B981 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f3f4f6 100%);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-primary font-bold text-xl">BoostReach</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-primary px-3 py-2 font-medium">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary px-3 py-2 font-medium">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-primary px-3 py-2 font-medium">Services</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary px-3 py-2 font-medium">Testimonials</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary px-3 py-2 font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-primary">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary">About</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary">Services</a>
+                <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Grow Your Business Online with BoostReach</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">We help businesses of all sizes achieve digital success through data-driven marketing strategies.</p>
+                <a href="#contact" class="inline-flex items-center px-8 py-3 bg-white text-primary font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300">
+                    Get a Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">About Us</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-gray-600 mb-6">
+                    BoostReach is a full-service digital marketing agency dedicated to helping businesses thrive in the digital landscape. Founded in 2015, we've helped over 200 clients achieve their online goals through innovative strategies and measurable results.
+                </p>
+                <p class="text-lg text-gray-600">
+                    Our mission is to bridge the gap between businesses and their potential customers through targeted, ethical, and effective digital marketing solutions. We believe in transparency, data-driven decisions, and building long-term partnerships with our clients.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Our Services</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300 ease-in-out">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-search fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SEO Optimization</h3>
+                    <p class="text-gray-600">
+                        Improve your search engine rankings and organic traffic with our comprehensive SEO strategies tailored to your business goals.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300 ease-in-out">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-share-alt fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Media Marketing</h3>
+                    <p class="text-gray-600">
+                        Build brand awareness and engage with your audience through strategic social media campaigns across all major platforms.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300 ease-in-out">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-ad fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">PPC Advertising</h3>
+                    <p class="text-gray-600">
+                        Drive targeted traffic and conversions with our pay-per-click advertising campaigns on Google, Facebook, and other networks.
+                    </p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300 ease-in-out">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-envelope fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Email Campaigns</h3>
+                    <p class="text-gray-600">
+                        Nurture leads and retain customers with personalized email marketing campaigns that deliver results.
+                    </p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300 ease-in-out">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-chart-line fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Analytics</h3>
+                    <p class="text-gray-600">
+                        Gain valuable insights into your website performance and user behavior to make informed marketing decisions.
+                    </p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300 ease-in-out">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-paint-brush fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Marketing</h3>
+                    <p class="text-gray-600">
+                        Attract and engage your target audience with high-quality, relevant content that drives conversions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">What Our Clients Say</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mr-4">JS</div>
+                        <div>
+                            <h4 class="font-bold">John Smith</h4>
+                            <p class="text-gray-600 text-sm">CEO, TechSolutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "BoostReach transformed our online presence. Our website traffic increased by 300% within 6 months of working with them. Their team is professional, responsive, and truly understands digital marketing."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white font-bold mr-4">AD</div>
+                        <div>
+                            <h4 class="font-bold">Amanda Davis</h4>
+                            <p class="text-gray-600 text-sm">Marketing Director, StyleHub</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "We've worked with several agencies before, but none delivered results like BoostReach. Their social media strategy helped us double our Instagram following and increase sales by 45% in just 3 months."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-6">Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt fa-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Our Office</h4>
+                                <p class="text-gray-600">123 Digital Avenue, Suite 456<br>San Francisco, CA 94107</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i class="fas fa-envelope fa-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email Us</h4>
+                                <p class="text-gray-600">hello@boostreach.com<br>support@boostreach.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i class="fas fa-phone-alt fa-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Call Us</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567<br>Mon-Fri, 9am-5pm PST</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-primary transition duration-300">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-primary transition duration-300">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-primary transition duration-300">
+                                <i class="fab fa-facebook fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-primary transition duration-300">
+                                <i class="fab fa-twitter fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold">BoostReach</span>
+                    <p class="text-gray-400 mt-1">Digital Marketing Agency</p>
+                </div>
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2025 BoostReach. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg max-w-xs hidden" id="deploy-info">
+        <h3 class="font-bold mb-2">Deployment Options</h3>
+        <p class="text-sm mb-2">1. <strong>GitHub Pages:</strong> Host for free by uploading to GitHub and enabling GitHub Pages</p>
+        <p class="text-sm mb-2">2. <strong>Netlify:</strong> Drag & drop this folder to Netlify for free hosting</p>
+        <p class="text-sm mb-2">3. <strong>Vercel:</strong> Import this project to Vercel for free deployment</p>
+        <button onclick="hideDeployInfo()" class="text-primary text-sm mt-2">Got it!</button>
+    </div>
+
+    <button onclick="showDeployInfo()" class="fixed bottom-4 right-4 bg-primary text-white p-3 rounded-full shadow-lg">
+        <i class="fas fa-rocket"></i>
+    </button>
+
+    <script>
+        // Deployment info toggle
+        function showDeployInfo() {
+            document.getElementById('deploy-info').classList.remove('hidden');
+        }
+        
+        function hideDeployInfo() {
+            document.getElementById('deploy-info').classList.add('hidden');
+        }
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the form data to a server
+            // For this demo, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been received. We'll contact you at ${email} soon.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=khantanzeem/digitalmarketing" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
